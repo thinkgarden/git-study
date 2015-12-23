@@ -27,9 +27,9 @@
 
 6、删除文件
 
-当你从本地删除了一个文件，如果是确实要从版本库中删除该文件，那就用命令`git rm`删掉，并且`git commit`;另一种情况是删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本：`git checkout — filename`
+当你从本地删除了一个文件，如果是确实要从版本库中删除该文件，那就用命令`git rm filename`删掉，并且`git commit`;另一种情况是删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本：`git checkout — filename`
 
-git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
+`git checkout` 其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。
 
 
 7、分支创建
@@ -38,21 +38,21 @@ git checkout其实是用版本库里的版本替换工作区的版本，无论�
 
 8、分支切换
 
-  git checkout 分支名
+    git checkout 分支名
 
 git checkout 命令加上-b参数表示创建并切换分支
 
-  git checkout -b 分支名
+    git checkout -b 分支名
 
 
 8、分支合并
 
 先切换回需要合并代码的主分支上（通常是master），然后执行
 
-  git merge 分支名
+    git merge 分支名
 
 9、删除分支
 
-  git branch -d 分支名
+    git branch -d 分支名
 
  你可以使用带 -d 选项的 git branch 命令来删除分支
